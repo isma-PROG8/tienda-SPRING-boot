@@ -1,0 +1,17 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/resources/architecture.html
+/target/
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+.mtj.tmp/
+*.class
+.settings/
+.classpath
+.project
+.factorypath
+.idea/
+*.iws
+*.iml
+*.ipr

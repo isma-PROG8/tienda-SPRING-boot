@@ -11,12 +11,12 @@ public class HolaController {
 
 
 
-    @GetMapping("/tienda/vender")
-    public String vender(@RequestParam String nombre, @RequestParam double precioUnidad ,@RequestParam int stock) {
+    @GetMapping("/tienda/guardar")
+    public String guardar(@RequestParam String nombre, @RequestParam double precioUnidad ,@RequestParam int stock) {
         // Creamos el producto y lo guardamos en el servicio
         Producto nuevo = new Producto(nombre, precioUnidad , stock);
         tiendaService.agregar(nuevo);
-        return "Has vendido: " + nombre + " por " + precioUnidad + "€. ¡Venta guardada!";
+        return "Has guardado : " + nombre + " por " + precioUnidad + "€. ¡Producto guardado!";
     }
 
     @GetMapping("/tienda/ver-ventas")

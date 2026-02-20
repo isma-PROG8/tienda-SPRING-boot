@@ -19,8 +19,8 @@ public class HolaController {
         return "Has guardado : " + nombre + " por " + precioUnidad + "€. ¡Producto guardado!";
     }
 
-    @GetMapping("/tienda/ver-ventas")
-    public List<Producto> verVentas() {
+    @GetMapping("/tienda/ver-todos")
+    public List<Producto> verTodos() {
         return tiendaService.obtenerTodos();
     }
 
